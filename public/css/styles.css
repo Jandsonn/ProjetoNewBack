@@ -1,0 +1,232 @@
+* {
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    flex-direction: column;
+    background-color: #e7eef4;
+    color: rgb(21, 20, 20);
+    margin: 0px;
+    border-collapse: collapse;
+}
+
+
+/*Estilização dos forms*/
+
+.w3-container {
+    padding: 0px 15px;
+    margin: 7px 200px;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    border: #4f87dc;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 10px 7px 17px 10px rgba(50, 50, 50, 0.22);
+    width: 50%;
+    transition: all 0.3s ease-out;
+    margin: 0 auto;
+    text-justify: flex;
+}
+
+button {
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(34, 29, 29);
+    border-radius: 5px;
+}
+
+
+/*Estilo fo formulário*/
+
+.w3-input {
+    border: 0 none;
+    outline: 0;
+    cursor: pointer;
+    color: rgb(22, 24, 28);
+    margin: 5px;
+    padding: 5px;
+    flex-direction: flex;
+    max-width: 200px;
+    max-height: 150px;
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+    padding-top: 5%;
+}
+
+.btn:hover {
+    background-color: #4f87dc;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #4f87dc;
+    color: rgb(248, 243, 243);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    color: rgb(182, 123, 1);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th:hover {
+    background-color: #3e4545;
+    color: white;
+    cursor: pointer;
+}
+
+body {
+    padding: 0%;
+    margin: 0px;
+    background-color: hsl(210, 10%, 23%);
+}
+
+.h1 {
+    color: black;
+}
+
+.div-style {
+    padding: 0px;
+    background: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 0px;
+    height: auto;
+}
+
+
+/*css da lista de cadastro não mexer*/
+
+li a {
+    display: inline;
+    color: rgb(48, 44, 44);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*CSS DO DADAVACI*/
+
+.dadovaci-container div {
+    width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+
+/*alinhamento navbar*/
+
+.nav-link {
+    background-color: hsl(210, 10%, 23%);
+}
+
+
+/*borda do card none*/
+
+.card {
+    border: none;
+}
+
+
+/*cor dos link a href*/
+
+.color-link {
+    color: rgb(182, 123, 1);
+    list-style: none;
+    list-style-type: none;
+    border: none;
+    color: rgb(182, 123, 1);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.a {
+    color: rgb(182, 123, 1);
+}
+
+.flex-containe {
+    flex-direction: row;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color: #E7EEF4;
+    color: rgb(182, 123, 1);
+    list-style: none;
+    list-style-type: none;
+}

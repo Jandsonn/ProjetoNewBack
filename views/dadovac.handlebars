@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Edição de cadastro</title>
+</head>
+<body class="flex-containe">
+
+<div>
+    <div class="containe">
+        <a href="/dadovaci" class="color-link">Voltar</a>
+        <h1>Vacinados: </h1>
+        <h1>{{dadovac.nome}}</h1>
+        <p> Está pessoa tomou: {{dadovac.quantvac}} Vacinas.</p>
+        <p>CPF: {{dadovac.cpf}}</p>
+        <p>Localidade: {{dadovac.local}}</p>
+
+    <div>
+            <br>
+                <!--Aqui é instância para a edição-->        
+            <form action="/dadovaci/remove/{{dadovac.id}}" method="POST">
+             <a class="btn-edit" href="/dadovaci/edit/{{dadovac.id}}">Editar</a>
+            <p>
+            <br>
+            <!--Instancia do botão para remover-->
+           <input type="submit" value="Remover" class="btn-edit">
+        </form>
+        </div>
+     </div>
+</div>
+
+</body>
+</html>

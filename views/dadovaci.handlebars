@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Lista</title>
+</head>
+<body>
+    
+
+<div class="flex-containe">
+    <a href="/" class="color-link"> Voltar para tela de cadastro</a>
+    <h1>Cadastros disponíveis</h1>
+    {{#each dadovaci}}
+    <div>
+
+        <table>
+
+            <tr>
+                <th>Id: {{this.id}} </th>
+            </tr>
+
+            <br>
+
+            <tr>
+                <th>Nome: {{this.nome}}</th>
+            </tr>
+            
+            <br>
+            
+            <tr>
+                <th>Nascimento: {{this.datanasc}}
+            </tr> 
+    
+            <br>
+
+            <tr>
+                <th>Idade: {{this.idade}} </th>
+            </tr>
+
+            <br>
+
+            <tr>
+                <th> Local: {{this.local}} </th>
+            </tr>
+
+            <br>
+
+            </tr>
+            <th>Número de vacinas: {{this.quantvac}} </th>
+            </tr>
+
+            <br>
+
+            <tr>
+                <th>CPF: {{this.cpf}}</th>
+            </tr>
+
+        </table>
+
+            <a class="color-link" href="/dadovaci/{{this.id}}">Verificar vacinas</a>
+    </div>
+
+    {{/each}}
+
+</div>
+</body>
+</html>

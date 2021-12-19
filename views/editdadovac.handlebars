@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>Editar cadastros</title>
+</head>
+
+<body>
+<div class="flex-containe">
+
+    <form action="/dadovaci/updatedadovac" method="POST" class="card-edit">
+      <input type="hidden" name="id" value={{dadovac.id}}>
+      <h1 class="edith1">Editar cadastros</h1>
+    
+    <div class="w3-container">    
+        <label for="nome" class="form__label">Nome:</label>
+        <input type="text"  class="w3-input" name="nome" autocomplete="off" placeholder="Informe seu nome:" value="{{dadovac.nome}}">
+    </div> 
+
+    <div class="w3-container">    
+        <label for="datanasc" class="form__label">Data de nascimento:</label>
+        <input type="date" class="w3-input" name="datanasc" autocomplete="off"  placeholder="Informe sua data de nascimento:" value="{{dadovac.datanasc}}">
+    </div> 
+
+    <div class="w3-container">    
+        <label for="idade" class="form__label">Idade:</label>
+        <input type="int"  class="w3-input" autocomplete="off" name="idade" placeholder="Informe sua idade:" value="{{dadovac.idada}}">
+    </div> 
+
+    <div class="w3-container">    
+        <label for="local" class="form__label">Local:</label>
+        <input type="text" name="local"  autocomplete="off" class="w3-input" placeholder="Informe sua localidade:" value="{{dadavac.local}}">
+    </div> 
+
+    <div class="w3-container">    
+        <label for="quantvac" class="form__label">Quantidade de vacina: </label>
+        <input type="number" name="quantvac" autocomplete="off" class="w3-input" placeholder="Quantidade de vacina:" value="{{dadovac.quantvac}}">
+    </div> 
+
+    <div class="w3-container">    
+        <label for="cpf" class="form__label">CPF: </label>
+        <input type="text" name="cpf"  autocomplete="off"  class="w3-input" placeholder="Informe seu CPF:" value="{{dadovac.cpf}}">   
+    </div> 
+
+    <br>
+    <button type="submit" class="btn" value="Registrar">Editar</button>
+    <br>
+    <br>
+    </form>
+</div>
+        
+</body>
+</html>
